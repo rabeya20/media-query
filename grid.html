@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 80px 80px 80px 80px 80px 80px; */
+            /* grid-template-columns: 80px 70px 100px 80px 200px 80px; */
+            grid-template-columns: 1fr 3fr 4fr;
+            /* grid-template-columns: repeat(3,100px); */
+            /* grid-template-columns: repeat(3,100px) 300px 70px; */
+            /* grid-template-columns: repeat(4,1fr) */
+            /* grid-template-columns: 200px 70px auto; */
+            /* grid-template-columns: 100px 70px 300px; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* grid-gap: 30px; */
+            /* column-gap: 30px; */
+            /* row-gap: 30px; */
+        }
+         .list {
+            border: 1.5px solid rgb(14, 136, 69);
+         }
+    </style>
+</head>
+<body>
+    <h3>Explore Grid layout: 2D Layout</h3>
+
+    <div class="container">
+        <div class="list">item-1</div>
+        <div class="list">item-2</div>
+        <div class="list">item-3</div>
+        <div class="list">item-4</div>
+        <div class="list">item-5</div>
+        <div class="list">item-6</div>
+        <div class="list">item-7</div>
+        <div class="list">item-8</div>
+        <div class="list">item-9</div>
+        <div class="list">item-10</div>
+        <div class="list">item-11</div>
+        <div class="list">item-12</div>
+        <div class="list">item-13</div>
+        <div class="list">item-14</div>
+        <div class="list">item-15</div>
+        <div class="list">item-16</div>
+        <div class="list">item-17</div>
+        <div class="list">item-18</div>
+        <div class="list">item-19</div>
+        <div class="list">item-20</div>
+    </div>
+    
+</body>
+</html>
