@@ -3,109 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive</title>
+    <title>Media Query</title>
     <style>
         .container {
             display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-gap:30px;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 30px;
             
         }
         .food {
-            border: 1px solid rgba(128, 128, 128, 0.226);
-            padding: 20px;
-            border-radius: 10px;
-
+            border: 2px solid rgb(27, 163, 9);
+            padding: 18px;
+            border-radius: 8px;
         }
         .food img {
             width: 100%;
+            border-radius: 5px;
         }
-        
-        
-            /* media query */
-            
-        @media screen and (max-width: 576px){
+        .food button {
+            color: white;
+            background-color: rgb(209, 69, 69);
+            padding: 10px;
+            border-radius: 5px;
+            border: 0;
+        }
+        /* For smaller device */
+    
+        @media screen and (max-width: 576px) {
+         .container {grid-template-columns: repeat(1,1fr);}  
+         .food {
+            background-color:cadetblue;
+            color: white;
+
+         }
+         .food button {
+            background-color: white;
+            color: rgb(12, 102, 27);
+         }
+        }
+        /* For medium device */
+        @media  screen and (min-width: 577px) and (max-width: 992px) {
             .container {
-                grid-template-columns: repeat(1,1fr);
+                grid-template-columns: repeat(2,1fr);
             }
+            
         }
+
     </style>
 </head>
 <body>
+    <!-- .container>.food*12>img[src="healthy-011636373981.jpg"]+h3{Food Item -$}+p{Price: -\$$00}+p{lorem20}+btn{Buy Now} -->
     <div class="container">
         <div class="food">
             <img src="healthy-011636373981.jpg" alt="">
             <h3>Food Item -1</h3>
-            <p>Price: $100</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, itaque!</p>
+            <p>Price: -$100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae reprehenderit rerum numquam quisquam tenetur placeat praesentium repellat ullam delectus dolorem?</p>
+            <button>Buy Now</button>
         </div>
         <div class="food">
             <img src="healthy-011636373981.jpg" alt="">
             <h3>Food Item -2</h3>
-            <p>Price: $200</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, delectus.</p>
+            <p>Price: -$200</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, iusto! Odio minus eius eum quod necessitatibus alias placeat adipisci ducimus!</p>
+            <button>Buy Now</button>
         </div>
         <div class="food">
             <img src="healthy-011636373981.jpg" alt="">
             <h3>Food Item -3</h3>
-            <p>Price: $300</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, rerum.</p>
+            <p>Price: -$300</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt vel exercitationem quia itaque enim aliquid quisquam inventore similique dolore repudiandae?</p>
+            <button>Buy Now</button>
         </div>
         <div class="food">
             <img src="healthy-011636373981.jpg" alt="">
             <h3>Food Item -4</h3>
-            <p>Price: $400</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, vitae!</p>
+            <p>Price: -$400</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo minima unde reiciendis inventore magni qui consequuntur quasi voluptate alias adipisci?</p>
+            <button>Buy Now</button>
         </div>
         <div class="food">
             <img src="healthy-011636373981.jpg" alt="">
             <h3>Food Item -5</h3>
-            <p>Price: $500</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quibusdam?</p>
+            <p>Price: -$500</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis cumque labore, voluptatibus aut porro dolor itaque repudiandae ipsam ea enim.</p>
+            <button>Buy Now</button>
         </div>
         <div class="food">
             <img src="healthy-011636373981.jpg" alt="">
             <h3>Food Item -6</h3>
-            <p>Price: $600</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, ipsa?</p>
+            <p>Price: -$600</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum magni accusantium mollitia architecto. Ullam, est! Qui ad obcaecati saepe. Laudantium.</p>
+            <button>Buy Now</button>
         </div>
         <div class="food">
             <img src="healthy-011636373981.jpg" alt="">
             <h3>Food Item -7</h3>
-            <p>Price: $700</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, soluta?</p>
+            <p>Price: -$700</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nulla vero quaerat dolorum expedita maxime obcaecati eligendi voluptate quia eaque?</p>
+            <button>Buy Now</button>
         </div>
         <div class="food">
             <img src="healthy-011636373981.jpg" alt="">
             <h3>Food Item -8</h3>
-            <p>Price: $800</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, alias.</p>
+            <p>Price: -$800</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, iste. Animi est consequatur ab similique expedita laboriosam natus soluta dolorum!</p>
+            <button>Buy Now</button>
         </div>
         <div class="food">
             <img src="healthy-011636373981.jpg" alt="">
             <h3>Food Item -9</h3>
-            <p>Price: $900</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, reiciendis?</p>
+            <p>Price: -$900</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, deleniti? Omnis et aut, perspiciatis voluptatum beatae mollitia possimus sapiente nihil?</p>
+            <button>Buy Now</button>
         </div>
         <div class="food">
             <img src="healthy-011636373981.jpg" alt="">
             <h3>Food Item -10</h3>
-            <p>Price: $1000</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, magni!</p>
+            <p>Price: -$1000</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fuga esse provident rerum vel ut neque sint enim accusantium corporis.</p>
+            <button>Buy Now</button>
         </div>
         <div class="food">
             <img src="healthy-011636373981.jpg" alt="">
             <h3>Food Item -11</h3>
-            <p>Price: $1100</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, consectetur.</p>
+            <p>Price: -$1100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quidem iste recusandae. Molestias consequuntur mollitia neque culpa? Deserunt, quam assumenda.</p>
+            <button>Buy Now</button>
         </div>
         <div class="food">
             <img src="healthy-011636373981.jpg" alt="">
             <h3>Food Item -12</h3>
-            <p>Price: $1200</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, in?</p>
+            <p>Price: -$1200</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ex itaque dolores iure? Nam, quod consequuntur. Corrupti similique distinctio debitis.</p>
+            <button>Buy Now</button>
         </div>
     </div>
-    
+   
 </body>
 </html>
